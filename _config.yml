@@ -3,7 +3,7 @@ title: Curious Y
 SEOTitle: Curious Y
 header-img: img/home-bg.jpg
 email: arbolkim@gmail.com
-description: "호기심으로 하는 개발 공부 기록 | Web & design Lover | 这里是 duyan的个人博客，与你一起发现更大的世界。"
+description: "호기심으로 하는 개발 실험의 기록 | Web & design Lover
 keyword: "web, react, javascript, java"
 url: "https://duyankim.github.io" # your host, for absolute URL
 baseurl: # for example, '/blog' if your blog hosted on 'host/blog'
@@ -74,7 +74,7 @@ ga_domain: duyankim.github.io
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "호기심으로 하는 개발 공부 기록 | Web & design Lover | 这里是 duyan的个人博客，与你一起发现更大的世界。"
+sidebar-about-description: "호기심으로 하는 개발 실험의 기록 | Web & design Lover "
 sidebar-avatar: /img/nyancat.gif # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
