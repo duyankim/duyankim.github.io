@@ -68,9 +68,11 @@ comments: true
 
 #### 데이터 모델 level 통상적인 구분
 
-⛱️ **Conceptual** `개념`
+1. ⛱️ **Conceptual** `개념`
 
-⛱️ **Logical** `논리`
+2. ⛱️ **Logical** `논리`
+
+3. ⛱️ **Physical** `물리`
 
 #### 데이터 모델 level 세분화된 구분
 
