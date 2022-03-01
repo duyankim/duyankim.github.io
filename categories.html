@@ -13,8 +13,8 @@ header-img: "img/about-bg.jpg"
       <h3 class="category-head">{{ category_name }}</h3>
       {% for post in site.categories[category_name] %}
       <li>
-          <h6><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h6>
-          <span>{{ post.subtitle }}</span>
+          <h6 style="display: inline"><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h6>
+          <b>{{ post.subtitle }}</b>
           <small>{{ post.date | date_to_string }}</small>
       </li>
       {% endfor %}
