@@ -85,7 +85,10 @@ widgets:
   - archive
   - category
 featured-tags: true # whether or not using Feature-Tags
-featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value
+featured-condition-size: 2 # A tag will be featured if the size of it is more than this condition value
+archive_type: "monthly"
+show_count: true
+category: true
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
