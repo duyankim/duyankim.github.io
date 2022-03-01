@@ -6,7 +6,7 @@ header-img: "img/about-bg.jpg"
 ---
 
 <div class="post-container">
-<!--
+  <!--
   <ul class="posts-list">
     {% assign category = page.category | default: page.title %}
     {% for post in site.categories[category] %}
@@ -24,19 +24,23 @@ header-img: "img/about-bg.jpg"
 
   <div id="archives">
     {% for category in site.categories %}
-      <div class="archive-group">
+    <ul class="posts-list">
+      <!--
         {% capture category_name %}{{ category | first }}{% endcapture %}
         <div id="#{{ category_name }}"></div>
         <p></p>
-    
-        <h3 class="category-head">{{ category_name }}</h3>
-        <a name="{{ category_name }}"></a>
-        {% for post in site.categories[category_name] %}
-        <article class="archive-item">
-          <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-        </article>
-        {% endfor %}
-      </div>
+      -->
+      {% capture category_name %}{{ category | first }}{% endcapture %}
+      <h3 class="category-head">{{ category_name }}</h3>
+      {% for post in site.categories[category_name] %}
+      <li>
+        <h5>
+          <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
+          <small>{{ post.date | date_to_string }}</small>
+        </h5>
+      </li>
+      {% endfor %}
+    </ul>
     {% endfor %}
-    </div>
+  </div>
 </div>
