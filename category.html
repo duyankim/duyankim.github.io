@@ -9,7 +9,7 @@ header-img: "img/about-bg.jpg"
 
   <ul class="posts-list">
   
-    {% assign category = include.category | default: page.title %}
+    {% assign category = page.include.category | default: page.include.title %}
     {% for post in site.categories[category] %}
       <li>
         <h5>
