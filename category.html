@@ -6,11 +6,10 @@ header-img: "img/about-bg.jpg"
 ---
 
 <div class="post-container">
-  {% include category/Algorithm.md %}
 
   <ul class="posts-list">
   
-    {% assign category = page.category | default: page.title %}
+    {% assign category = include.category | default: page.title %}
     {% for post in site.categories[category] %}
       <li>
         <h5>
