@@ -6,38 +6,16 @@ header-img: "img/about-bg.jpg"
 ---
 
 <div class="post-container">
-  <!--
-  <ul class="posts-list">
-    {% assign category = page.category | default: page.title %}
-    {% for post in site.categories[category] %}
-      <li>
-        <h5>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-          </a>
-          <small>{{ post.date | date_to_string }}</small>
-        </h5>
-      </li>
-    {% endfor %}
-  </ul>
-  -->
-
   <div id="archives">
     {% for category in site.categories %}
     <ul class="posts-list">
-      <!--
-        {% capture category_name %}{{ category | first }}{% endcapture %}
-        <div id="#{{ category_name }}"></div>
-        <p></p>
-      -->
       {% capture category_name %}{{ category | first }}{% endcapture %}
       <h3 class="category-head">{{ category_name }}</h3>
       {% for post in site.categories[category_name] %}
       <li>
-        <h5>
           <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
+          <span>{{ post.subtitle }}</span>
           <small>{{ post.date | date_to_string }}</small>
-        </h5>
       </li>
       {% endfor %}
     </ul>
