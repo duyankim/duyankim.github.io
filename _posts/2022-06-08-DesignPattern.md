@@ -4,7 +4,7 @@ author: "Yan"
 catalog: true
 subtitle: "<HeadFirst Design Pattern>을 읽고"
 header-img: "img/header/none4.jpg"
-title: "01장 - 디자인 패턴의 세계로 떠냐기 '전략패턴'"
+title: "01. 전략패턴"
 date: 2022-06-08 23:15:08 +0000
 categories:
   - DesignPattern
@@ -29,18 +29,23 @@ public class Duck {
     // 모든 오리가 수영할 수 있다.
   }
 
-  public abstract void display(); // 모든 오리의 모양이 다르기 때문에 추상클래스로 구성
+  public abstract void display(); 
+  // 모든 오리의 모양이 다르기 때문에 추상클래스로 구성
 
   // 기타 등등의 오리 관련 메소드
 }
+```
 
+```java
 public class MallardDuck extends Duck {
   @Override
   public void display() {
     // 모양을 나타냄
   }
 }
+```
 
+```java
 public class RedheadDuck extends Duck {
   @Override
   public void display() {
