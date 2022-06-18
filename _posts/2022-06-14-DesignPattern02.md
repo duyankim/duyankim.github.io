@@ -227,7 +227,7 @@ public class NYStyleCheezePizza extends Pizza {
 - 추상 팩토리 패턴 사용시 클라이언트에서 추상 인터페이스로 일련의 제품을 공급받을 수 있다. 실제로 어떤 제품이 생산되는지는 전혀 알 필요가 없다.
 - 고로, 클라이언트와 팩토리에서 생산되는 제품을 분리할 수 있다.
 
-#### 🏭 원재료 생산 인터페이스
+#### 🏭🍅🧅🧄🌶🧀🥓 원재료 생산 인터페이스
 ```java
 public interface PizzaIngredientFactory {
   
@@ -241,7 +241,7 @@ public interface PizzaIngredientFactory {
 ```
 
 
-#### 🏭 뉴욕 원재료 팩토리
+#### 🍅🧅🧄🌶🧀🥓 뉴욕 원재료 팩토리
 ```java
 public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
   
@@ -273,7 +273,7 @@ public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
 ```
 
 
-#### 🏭 Pizza 클래스가 팩토리에서 생산한 원재료만 사용하도록 코드 고치기
+#### 🍕 Pizza 클래스가 팩토리에서 생산한 원재료만 사용하도록 코드 고치기
 ```java
 public abstract class Pizza {
   String name;
@@ -315,7 +315,7 @@ public abstract class Pizza {
 ```
 
 
-#### 🏭 치즈 피자
+#### 🧀🍕 치즈 피자
 ```java
 public class CheesePizza extends Pizza {
   PizzaIngredientFactory ingredientFactory;
@@ -334,7 +334,7 @@ public class CheesePizza extends Pizza {
 ```
 
 
-#### 🏭 뉴욕 피자 가게
+#### 🧑🏼‍🍳 뉴욕 피자 가게
 ```java
 public class NYPizzaStore extends PizzaStore {
 
@@ -383,12 +383,13 @@ nyPizzaStore.orderPizza("cheese");
 Pizza pizza = createPizza("cheese");
 ```
 
-4. PizzaStore에서 원재료를 선택하고 그 인스턴스를 만든다. 원재료 팩토리는 각 피자의 생성자에 전달된다. `new CheesePizza()`로 `Pizza`인스턴스가 만들어진다.
+4. 
 ```java
 Pizza pizza = new CheesePizza(nyIngredientFactory);
 ```
+PizzaStore에서 원재료를 선택하고 그 인스턴스를 만든다. 원재료 팩토리는 각 피자의 생성자에 전달된다. `new CheesePizza()`로 `Pizza`인스턴스가 만들어진다.  
 
-5.
+5. 
 ```java
 void prepare() {
   dough = factory.createDough();
@@ -399,7 +400,7 @@ void prepare() {
 
 6. `orderPizza()`가 피자를 `bake()`, `cut()`, `box()`한다.
 
-## 🍕 3. 팩토리 메소드 패턴과 추상 팩토리 패턴 비교
+## 🍕 5. 팩토리 메소드 패턴과 추상 팩토리 패턴 비교
 
 
 |-|팩토리 메소드 패턴|추상 팩토리 패턴|
