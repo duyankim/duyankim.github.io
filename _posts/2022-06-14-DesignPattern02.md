@@ -4,7 +4,7 @@ author: "Yan"
 catalog: true
 subtitle: "HeadFirst Design Pattern을 읽고"
 header-img: "img/header/none4.jpg"
-title: "Gof Design Pattern - 04. 팩토리 패턴"
+title: "Gof Design Pattern - 04. 팩토리 패턴 (팩토리 메소드, 추상 팩토리)"
 date: 2022-06-14 23:15:08 +0000
 categories:
   - DesignPattern
