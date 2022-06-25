@@ -4,7 +4,7 @@ author: "Yan"
 catalog: true
 subtitle: "HeadFirst Design Pattern을 읽고"
 header-img: "img/header/none4.jpg"
-title: "Gof Design Pattern - 04. 팩토리 패턴 (팩토리 메소드, 추상 팩토리)"
+title: "Gof Design Pattern - 팩토리 패턴 (팩토리 메소드, 추상 팩토리)"
 date: 2022-06-14 23:15:08 +0000
 categories:
   - DesignPattern
@@ -15,7 +15,7 @@ tags:
 comments: true
 ---
 
-# ✏️ 04장 팩토리 패턴 Factory Pattern
+# ✏️ 팩토리 패턴 Factory Pattern
 
 > 'new'연산자를 사용하면 구상 클래스의 인스턴스가 만들어진다.   
 > 구상 클래스를 바탕으로 코딩하면 나중에 수정해야 할 가능성이 커지고 유연성이 떨어진다.   
