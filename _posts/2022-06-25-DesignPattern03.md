@@ -67,20 +67,30 @@ public static synchronized Singleton getInstance() {
 
 - 해당 방식에서 아쉬운 점
   - 메소드를 동기화하면 성능이 100배정도 저하된다. 
-  - Singleton 에 synchronized 메소드가 많을수록 멀티 스레드는 병목현상을 겪는다. 기껏 멀티 스레드를 사용하는데 Singleton 을 사용할 때는 싱글 스레드처럼 동작하는 문제가 발생한다는 뜻이다.  
+  - Singleton 에 `synchronized` 메소드가 많을수록 멀티 스레드는 병목현상을 겪는다. 기껏 멀티 스레드를 사용하는데 Singleton 을 사용할 때는 싱글 스레드처럼 동작하는 문제가 발생한다는 뜻이다.  
 
 #### synchronized
 
+**동시성 프로그래밍** : 여러 테스크가 동시에 처리되도록 구현하는 것  
+
+**동시성 보장**: 데이터 충돌과 같은 동시성 프로그래밍으로 발생되는 이슈를 피하는 방법  
+- 동시성 보장 방식 3가지
+1. synchronized
+2. volatile
+3. atomic
+
+
 `synchronized` : 동기적으로 한 스레드가 메소드 사용을 끝내기 전까지 다른 스레드는 기다리게 만들어서, 여러개의 스레드가 해당 메소드를 동시에 실행하는 것을 방지한다.  
 
-- `synchronized`는 lock을 사용해 동기화를 시킨다
+`synchronized`는 lock을 사용해 동기화를 시킨다
+
 - 4가지 사용법이 있다.
-1. synchronized method : 클래스의 인스턴스에 대하여 lock을 건다
-2. static synchronized method : 우리가 일반적으로 생각하는 static의 성질을 갖는다. 인스턴스가 아닌 클래스 단위로 lock을 건다.
-3. synchronized block : 인스턴스의 block단위로 lock을 건다. 
-4. static synchronized block : static method안에 synchronized block을 지정할 수 있다. lock객체를 지정하여 특정 대상에만 lock을 걸 수 있다. 
-- 인스턴스 단위라는 것은 synchronized 키워드가 적용된 곳에서는 전부 lock을 공유해서 쓴다. synchronized와 무관한 곳은 lock과 상관없다. 
-- method와 block의 차이는 method는 해당 객체 전체에 lock을 걸고, block은 lock의 대상을 지정할 수 있으며 block으로 동기화가 적용되는 범위를 한정시킬 수 있다는 것이다.
+1. **synchronized method** : 클래스의 인스턴스에 대하여 lock을 건다
+2. **static synchronized method** : 우리가 일반적으로 생각하는 static의 성질을 갖는다. 인스턴스가 아닌 클래스 단위로 lock을 건다.
+3. **synchronized block** : 인스턴스의 block단위로 lock을 건다. 
+4. **static synchronized block** : static method안에 synchronized block을 지정할 수 있다. lock객체를 지정하여 특정 대상에만 lock을 걸 수 있다. 
+- 인스턴스 단위: synchronized 키워드가 적용된 곳에서 전부 lock을 공유해서 쓴다. synchronized와 무관한 곳은 lock과 상관없다. 
+- `method`와 `block`의 차이는 `method`는 해당 객체 전체에 lock을 걸고, `block`은 lock의 대상을 지정할 수 있으며 `block`으로 동기화가 적용되는 범위를 한정시킬 수 있다는 것이다.
 
 ### 2. 인스턴스가 필요할 때는 생성하지 않고 처음부터 만들기
 
@@ -138,7 +148,11 @@ public class Singleton {
 
 `volatile` : 동시성 프로그래밍에서 발생할 수 있는 문제 중 하나인 가시성 문제를 해결하기 위해 사용되는 키워드.  
 - 가시성 문제 : 여러개의 스레드가 사용됨에 따라 `CPU Cache Memory`와 `RAM`의 데이터가 서로 일치하지 않아 생기는 문제
-- `volatile` 키워드를 붙인 공유 자원은 `RAM`에 직접 읽고 쓰는 작업을 수행할 수 있도록 해준다.
+- 한 스레드가 변경된 값을 `CPU Cache Memory`에서 `RAM`에 데이터를 저장하기 전, 다른 스레드에서 `RAM`에서 해당 값을 읽어 변경되기 이전의 값을 처리하게 되는 상황을 "가시성이 보장되지 않는다" 라고 말한다. 
+![cacheMemmory](https://user-images.githubusercontent.com/19832483/51120169-dc5fd480-1857-11e9-909e-4eb8201a2f44.png)
+- `volatile` 키워드를 붙인 공유 자원은 `RAM`에 직접 읽고 쓰는 작업을 수행할 수 있도록 해준다. 가시성이 보장되어야하는 변수를 `CPU Cache Memory`에서 읽는 것이 아니라 `RAM`에서만 읽도록 보장하는 것이다.
+![volatile](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbLWwSW%2FbtqRptqp9RK%2FrL4yGIT5y5iKQvGpk3zXTK%2Fimg.png)
+
 
 ### 4. ENUM 사용하기
 
@@ -192,3 +206,4 @@ public class Singleton {
 > [Multi Thread 환경에서의 올바른 Singleton](https://medium.com/@joongwon/multi-thread-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-%EC%98%AC%EB%B0%94%EB%A5%B8-singleton-578d9511fd42)  
 > [[Java] 혼동되는 synchronized 동기화 정리](https://jgrammer.tistory.com/entry/Java-%ED%98%BC%EB%8F%99%EB%90%98%EB%8A%94-synchronized-%EB%8F%99%EA%B8%B0%ED%99%94-%EC%A0%95%EB%A6%AC)  
 > [자바 깊이 알기 / 자바의 동기화 방식](https://ecsimsw.tistory.com/entry/%EC%9E%90%EB%B0%94%EC%9D%98-%EB%8F%99%EA%B8%B0%ED%99%94-%EB%B0%A9%EC%8B%9D-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B0%80%EC%8B%9C%EC%84%B1%EC%9D%B4%EB%9E%80-synchronized-volatile-atomic)  
+> [자바의 동시성 #2 - 동시성 프로그래밍에서 발생할 수 있는 문제점과 volatile, synchrozied 키워드](https://badcandy.github.io/2019/01/14/concurrency-02/)
