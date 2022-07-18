@@ -24,7 +24,10 @@ comments: true
 - `가상 프록시`를 써서 생성하기 힘든 자원으로의 접근을 제어할 수 있다.
 - `보호 프록시`를 써서 접근 권한이 필요한 자원으로의 접근을 제어할 수 있다.
 
-![proxy pattern](https://refactoring.guru/images/patterns/diagrams/proxy/structure-2x.png?id=3d54eeca9af4aa373e989a73463539b5)
+![proxy pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Proxy_pattern_diagram.svg/800px-Proxy_pattern_diagram.svg.png)
+- `Subject`: `Proxy`와 `RealSubject` 모두 `Subject`인터페이스를 구현해 어떤 클라이언트에서든 프록시를 `Subject`와 똑같은 식으로 다룰 수 있다.
+- `RealSubject`: 진짜 작업을 대부분 처리하는 객체. 
+- `Proxy`: 진짜 작업을 처리하는 객체의 레퍼런스가 들어있다. `RealSubject`의 인스턴스를 생성하거나, 그 객체의 생성 과정에 관여한느 경우가 많다. `RealSubject`로의 접근을 제어한다.
 
 ## 👽 원격 프록시
 
@@ -54,10 +57,6 @@ comments: true
 - **스켈레톤**`skeleton`: 서비스 보조 객체
 - `lookup` : 클라이언트가 원격 객체를 찾아서 접근할 때 쓸 수 있는 서비스
 ![RMI](https://t1.daumcdn.net/cfile/tistory/2704234F58ABB10B1D)
-
-- `Subject`: `Proxy`와 `RealSubject` 모두 `Subject`인터페이스를 구현해 어떤 클라이언트에서든 프록시를 `Subject`와 똑같은 식으로 다룰 수 있다.
-- `RealSubject`: 진짜 작업을 대부분 처리하는 객체. 
-- `Proxy`: 진짜 작업을 처리하는 객체의 레퍼런스가 들어있다. `RealSubject`의 인스턴스를 생성하거나, 그 객체의 생성 과정에 관여한느 경우가 많다. `RealSubject`로의 접근을 제어한다.
 
 ### 👽 원격 서비스 만드는 방법
 
@@ -184,6 +183,25 @@ public class MyRemoteClient {
 - 생성하는 데 많은 비용이 드는 객체를 대신한다.
 - 진짜 객체가 필요한 상황이 오기 전까지 객체의 생성을 미루는 기능을 제공한다.
 - 객체 생성이 끝나면 `RealSubject`에 직접 요청을 전달한다.
+
+## 🪐 보호 프록시
+
+- **동적 프록시** : `java.lang.reflect`의 프록시 기능을 이용하여 즉석에서 하나 이상의 인터페이스를 구현하고, 지정한 클래스에 메소드 호출을 전달하는 프록시 클래스가 실행 중에 생성되는 것
+- **보호 프록시** : 접근 권한을 바탕으로 객체로의 접근을 제어하는 프록시
+  - `InvocationHandler`에 프록시 클래스에 넣을 수 없는 *Proxy 클래스에게 무슨 일을 해야 하는지 알려 줄 방법*을 넣는다.
+  - `InvocationHandler`는 프록시에 호출되는 모든 메소드에 응답한다. 
+  - Proxy에서 메소드 호출을 받는다 → `InvocationHandler`에 진짜 작업을 부탁한다.
+![보호프록시](https://t1.daumcdn.net/cfile/tistory/266EE435543B43B112)
+
+### 동적 프록시 만드는 방법
+
+#### 1. InvocationHandler 만들기
+InvocationHandler는 프록시의 행동을 구현한다.
+
+#### 2. 동적 프록시 생성 코드 만들기
+프록시 클래스를 생성하고 그 인스턴스를 만드는 코드를 쓴다.
+
+#### 3. 적절한 프록시로 객체 감싸기
 
 ###### reference
 
