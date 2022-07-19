@@ -26,7 +26,7 @@ comments: true
 
 ![proxy pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Proxy_pattern_diagram.svg/800px-Proxy_pattern_diagram.svg.png)
 - `Subject`: `Proxy`와 `RealSubject` 모두 `Subject`인터페이스를 구현해 어떤 클라이언트에서든 프록시를 `Subject`와 똑같은 식으로 다룰 수 있다.
-- `RealSubject`: 진짜 작업을 대부분 처리하는 객체. 
+- `RealSubject`: 진짜 작업을 대부분 처리하는 객체. s
 - `Proxy`: 진짜 작업을 처리하는 객체의 레퍼런스가 들어있다. `RealSubject`의 인스턴스를 생성하거나, 그 객체의 생성 과정에 관여한느 경우가 많다. `RealSubject`로의 접근을 제어한다.
 
 ## 👽 원격 프록시
@@ -34,7 +34,7 @@ comments: true
 - 원격 프록시의 역할 : 원격 객체의 **로컬 대변자**
   - **원격 객체** : 다른 주소 공간(다른 JVM의 Heap에서 살고 있는 객체)
   - **로컬 대변자** : 로컬 대변자의 어떤 메소드를 호출하면, 다른 원격 객체에 그 메소드 호출을 전달해 주는 객체
-- 클라이언트 객체는 원격 객체의 메소드 호출을 하는 것 처럼 행동하지만, 실제로는 **로컬 힙에 들어있는 `프록시`객체의 메소드를 호출하고 있다.
+- 클라이언트 객체는 원격 객체의 메소드 호출을 하는 것 처럼 행동하지만, 실제로는 **로컬 힙에 들어있는 `프록시`객체의 메소드**를 호출하고 있다.
 - 네트워크 통신과 관련된 저수준 작업은 프록시 객체에서 처리해준다.
 
 ### 👽 원격 메소드
