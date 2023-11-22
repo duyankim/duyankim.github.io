@@ -51,7 +51,7 @@ plugins:
   - jekyll-mermaid
 
 # mermaid:
-#   src: 'path/to/mermaid.js'
+#   src: 'js/mermaid.min.js'
 
 # Markdown settings
 # replace redcarpet to kramdown,
