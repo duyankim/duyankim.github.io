@@ -33,6 +33,17 @@
 <!-- Simple Jekyll Search -->
 <script src="{{ "/js/simple-jekyll-search.min.js" | prepend: site.baseurl }}"></script>
 
+<script src="https://unpkg.com/mermaid@8.9.3/dist/mermaid.min.js"></script>
+<script>
+  $(document).ready(function () {
+    mermaid.initialize({
+      startOnLoad:true,
+      theme: "default",
+    });
+    window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+  });
+</script>
+
 <!-- Service Worker -->
 {% if site.service-worker %}
 <script src="{{ "/js/snackbar.js " | prepend: site.baseurl }}"></script>
