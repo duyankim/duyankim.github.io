@@ -7,6 +7,7 @@ gem "jekyll-feed"
 gem "jekyll-mermaid"
 gem "jekyll-gist"
 gem 'jekyll-include-cache'
+gem 'jekyll-toc'
 
 gem "jekyll"
 gem "rake"
