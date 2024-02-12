@@ -4,7 +4,7 @@ author: "Yan"
 catalog: true
 subtitle: "실무에 적용되는 builder pattern"
 header-img: "img/header/none4.jpg"
-title: "builder pattern"
+title: "빌더 패턴"
 date: 2024-01-25 23:15:08 +0000
 categories:
   - DesignPattern
@@ -58,7 +58,7 @@ Class HouseBuilder () {
 - 디렉터 클래스는 필수사항이 아니다. 그러나, 디렉터 클래스에 다양한 생성 루틴을 배치하여 프로그램 전체에서 재사용할 수 있으면 좋다.
 - 디렉터 클래스는 클라이언트 코드에서 제품 생성의 세부 정보를 완전히 숨긴다. 클라이언트는 디렉터와 생성을 시행한 후 빌더로부터 결과를 얻기만 하면 된다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/37dc7f94-e087-4940-9f34-ba873a35c4c1/e33045ce-2806-4e8b-8b74-2cf857e67a87/Untitled.png)
+![](https://refactoring.guru/images/patterns/diagrams/builder/structure.png?id=fe9e23559923ea0657aa5fe75efef333)
 
 1. 빌더 인터페이스는 모든 유형의 빌더들에 공통적인 제품 생성 단계들을 선언한다.
 2. 구상 빌더들은 생성 단계들의 다양한 구현을 제공한다. 구성 빌더들은 공통 인터페이스를 따르지 않는 제품들도 생성할 수 있다.
