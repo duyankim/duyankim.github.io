@@ -174,3 +174,12 @@ toc:
   sublist_class: ''
   item_class: toc-entry
   item_prefix: toc-
+
+
+## side nav bar
+defaults:
+  - scope:
+      path: ""
+    values:
+      sidebar:
+        nav: "main"

@@ -1,0 +1,24 @@
+main:
+  - title: "Spring"
+    url: /spring/
+  - title: "Java"
+    url: /java/
+  - title: "SQL"
+    url: /sql/
+  - title: "DesignPattern"
+    url: /designpattern/
+  - title: "CS"
+    url: /cs/
+  - title: "CI/CD"
+    url: /CICD/
+  - title: "NodeJS"
+    url: /nodejs/
+  - title: "Linux"
+    url: /linux/
+  - title: "Today_I_Learned"
+    url: /today_i_learned/
+    # children:
+    #   - title: "서브카테고리1"
+    #     url: /category3/sub1/
+    #   - title: "서브카테고리2"
+    #     url: /category3/sub2/

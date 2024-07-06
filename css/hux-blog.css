@@ -1695,3 +1695,30 @@ img::-moz-selection {
   overflow-y: hidden;
 }
 
+/* side nav bar */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.nav__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav__items {
+  margin: 0;
+  padding: 0;
+}
+
+.nav__sub-title {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
