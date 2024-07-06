@@ -29,7 +29,6 @@
                             <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                         </li>
                         {% endif %}
-                        {% endfor %}
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Posts</a>
                             <div class="dropdown-menu">
@@ -38,6 +37,7 @@
                                 {% endfor %}
                             </div>
                         </li>
+                        {% endfor %}
                         <li class="search-icon">
                             <a href="javascript:void(0)">
                                 <i class="fa fa-search"></i>
