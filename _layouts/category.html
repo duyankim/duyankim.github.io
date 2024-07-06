@@ -7,7 +7,6 @@ header-img: "img/about-bg.jpg"
 
 <div class="post-container">
   <div id="archives">
-    <div class="posts-grid">
       {% assign category_name = page.url | remove: '/categories/' | remove: '/' %}
       {% for post in site.posts %}
         {% if post.categories contains category_name %}
@@ -21,14 +20,15 @@ header-img: "img/about-bg.jpg"
                     {% else %} {{ post.content | strip_html | truncate:200 }} {% endif %}
                   </div>
               {% endif %}
-              <p class="post-meta">
+            </a>
+            <p class="post-meta">
                 Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{%
                 endif %} on {{ post.date | date: "%B %-d, %Y" }}
               </p>
-            </a>
           </div>
+          <hr />
         {% endif %}
       {% endfor %}
-    </div>
   </div>
 </div>
+
