@@ -25,6 +25,7 @@ github_username: duyankim
 highlighter: rouge
 permalink: pretty
 paginate: 10
+# paginate_path: "/page:num/"
 exclude:
   [
     "less",
@@ -90,6 +91,7 @@ widgets:
   - recent-posts
   - archive
   - category
+  - categories
 featured-tags: true # whether or not using Feature-Tags
 featured-condition-size: 2 # A tag will be featured if the size of it is more than this condition value
 archive_type: "monthly"
