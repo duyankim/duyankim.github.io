@@ -29,15 +29,17 @@
                             <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                         </li>
                         {% endif %}
+                        {% endfor %}
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Posts</a>
-                            <div class="dropdown-menu">
-                                {% for category in site.data.category %}
-                                <a class="nav-link" href="{{category | prepend: 'categories/' | relative_url }}">{{ category }}</a>
+                            <ul class="dropdown-menu">
+                                {% for category in site.categories %}
+                                <li>
+                                    <a class="dropdown-item" href="{{ site.baseurl }}/categories/{{ category[0] | slugify }}">{{ category[0] }}</a>
+                                </li>
                                 {% endfor %}
-                            </div>
+                            </ul>
                         </li>
-                        {% endfor %}
                         <li class="search-icon">
                             <a href="javascript:void(0)">
                                 <i class="fa fa-search"></i>
