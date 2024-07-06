@@ -30,6 +30,14 @@
                         </li>
                         {% endif %}
                         {% endfor %}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Posts</a>
+                            <div class="dropdown-menu">
+                                {% for category in site.data.category %}
+                                <a class="nav-link" href="{{category | prepend: 'categories/' | relative_url }}">{{ category }}</a>
+                                {% endfor %}
+                            </div>
+                        </li>
                         <li class="search-icon">
                             <a href="javascript:void(0)">
                                 <i class="fa fa-search"></i>
