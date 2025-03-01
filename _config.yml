@@ -87,16 +87,15 @@ ga_domain: duyankim.github.io
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "우리는 읽은 것으로 만들어지고, 기록되지 않은 것은 기억되지 않는다.
 그래서 나는 읽고, 배우고, 그리고 남긴다.
-배운 것은 언젠가 희미해지지만, 기록된 것은 사라지지 않는다.
-이 블로그는 내가 이해한 것들을 정리하고, 길을 잃을 때마다 다시 돌아와 마음을 붙이는 곳이다.
-누군가가 같은 고민을 할 때, 여기서 작은 실마리라도 찾을 수 있다면 더할 나위 없겠다.😉 "
+\n
+이 블로그는 내가 이해한 것들을 정리하고, 길을 잃을 때마다 다시 돌아와 마음을 붙이는 곳입니다.😉 "
 sidebar-avatar: /img/nyancat.gif # use absolute URL, seeing it's used in both `/` and `/about/`
 widgets:
   - recent-posts
   - archive
   - category
   - categories
-featured-tags: true # whether or not using Feature-Tags
+featured-tags: false # whether or not using Feature-Tags
 featured-condition-size: 2 # A tag will be featured if the size of it is more than this condition value
 archive_type: "monthly"
 show_count: true
