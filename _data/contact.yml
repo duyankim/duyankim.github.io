@@ -1,0 +1,11 @@
+# 사이드바 소셜 링크 (순서 = 화면 순서)
+- type: github
+  icon: "fab fa-github"
+  url: "https://github.com/duyankim"
+- type: email
+  icon: "fas fa-envelope"
+  noblank: true
+  url: "mailto:devduyan@gmail.com"
+- type: rss
+  icon: "fas fa-rss"
+  url: "/feed.xml"

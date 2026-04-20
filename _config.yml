@@ -1,179 +1,174 @@
 # --------------------------------------------------------------
-# Bank-End Chronicles — Minimal Mistakes 설정
+# Bank-End Chronicles — Chirpy 설정
+# https://github.com/cotes2020/jekyll-theme-chirpy
 # --------------------------------------------------------------
 
-# 테마
-remote_theme            : "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin   : "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "mint", "neon", "plum", "sunrise"
+theme: jekyll-theme-chirpy
 
 # 사이트 기본
-locale                  : "ko-KR"
-title                   : "Bank-End Chronicles"
-title_separator         : "|"
-subtitle                : "개발 공부 기록 | Java developer"
-name                    : "Duyan Kim"
-description             : "우리는 읽은 것으로 만들어지고, 기록되지 않은 것은 기억되지 않는다."
-url                     : "https://duyankim.github.io"
-baseurl                 : ""
-repository              : "duyankim/duyankim.github.io"
-teaser                  : # 포스트 카드 기본 대표 이미지 (img/ 하위 파일 사용 가능)
-logo                    : "/img/nyancat.gif"
-masthead_title          : # 상단 제목 (title과 같으면 비움)
-breadcrumbs             : true
-words_per_minute        : 200
-future                  : true
+lang: ko-KR
+timezone: Asia/Seoul
 
-# 댓글 — utterances (GitHub Issues 기반)
-comments:
-  provider              : "utterances"
-  utterances:
-    theme               : "github-light" # "github-light", "github-dark"
-    issue_term          : "pathname"
+title: Bank-End Chronicles
+tagline: "개발 공부 기록 | Java developer"
+description: >-
+  우리는 읽은 것으로 만들어지고, 기록되지 않은 것은 기억되지 않는다.
+  그래서 나는 읽고, 배우고, 그리고 남긴다.
 
-# 검색 (Lunr)
-search                  : true
-search_full_content     : true
-search_provider         : "lunr"
-lunr:
-  search_within_pages   : true
+url: "https://duyankim.github.io"
 
-# SEO
-og_image                : "/img/nyancat.gif"
+# GitHub / Social
+github:
+  username: duyankim
+
 social:
-  type                  : "Person"
-  name                  : "Duyan Kim"
+  name: Duyan Kim
+  email: devduyan@gmail.com
   links:
-    - "https://github.com/duyankim"
+    - https://github.com/duyankim
 
-# Google Analytics (GA4 ID 발급 후 기입)
+# ------------------------------------------------------------
+# 외관
+# ------------------------------------------------------------
+# light, dark, auto (시스템 설정 따라감)
+theme_mode: # [light | dark]  # 비워두면 사용자가 토글 가능
+
+# 메인 색상은 기본값 사용
+
+# 사이트 이미지
+img_cdn:
+avatar: /img/nyancat.gif
+social_preview_image: /img/nyancat.gif
+
+# 포스트 상단 스크롤 바 (토스트 알림)
+toc: true
+
+# ------------------------------------------------------------
+# 댓글 — Giscus (GitHub Discussions 기반)
+#   https://giscus.app 에서 아래 값들을 발급받아 채우세요.
+# ------------------------------------------------------------
+comments:
+  provider: giscus # [disqus | utterances | giscus]
+  giscus:
+    repo: "duyankim/duyankim.github.io"
+    repo_id: # ex) "R_kgDOxxxxxx"  — giscus.app 에서 발급
+    category: "Announcements"
+    category_id: # ex) "DIC_kwDOxxxxxx"  — giscus.app 에서 발급
+    mapping: pathname # [pathname | url | title | og:title]
+    strict: "0"
+    input_position: bottom # [top | bottom]
+    lang: ko
+    reactions_enabled: "1"
+    emit_metadata: "0"
+
+# ------------------------------------------------------------
+# 분석 (Google Analytics)
+#   GA4 트래킹 ID 받아서 아래에 채우면 활성화됩니다.
+# ------------------------------------------------------------
 analytics:
-  provider              : false # "google-gtag" 로 바꾸고 아래 tracking_id 기입하면 활성화
   google:
-    tracking_id         : # "G-XXXXXXXXXX"
-    anonymize_ip        : false
+    id: # "G-XXXXXXXXXX"
 
-# 사이트 저자 프로필 (사이드바)
-author:
-  name                  : "Duyan Kim"
-  avatar                : "/img/nyancat.gif"
-  bio                   : "읽고, 배우고, 그리고 남긴다 😉"
-  location              : "Seoul, Korea"
-  links:
-    - label             : "GitHub"
-      icon              : "fab fa-fw fa-github"
-      url               : "https://github.com/duyankim"
-    - label             : "Email"
-      icon              : "fas fa-fw fa-envelope-square"
-      url               : "mailto:devduyan@gmail.com"
+# ------------------------------------------------------------
+# 페이지 뷰 카운터
+# ------------------------------------------------------------
+pageviews:
+  provider: # [goatcounter | ...]
 
-# 푸터 링크
-footer:
-  links:
-    - label             : "GitHub"
-      icon              : "fab fa-fw fa-github"
-      url               : "https://github.com/duyankim"
+# ------------------------------------------------------------
+# 글 기본 설정
+# ------------------------------------------------------------
+# 포스트 URL 스타일
+permalink: /posts/:year/:month/:day/:title/
 
-# 빌드 설정
-markdown                : kramdown
-highlighter             : rouge
-lsi                     : false
-excerpt_separator       : "\n\n"
-incremental             : false
+# 페이지네이션
+paginate: 10
+
+# 대표 카테고리 아이콘(카테고리 아카이브 페이지 용) 등은 Chirpy가 내부 처리
+
+# ------------------------------------------------------------
+# Markdown / Syntax Highlight
+# ------------------------------------------------------------
+markdown: kramdown
+highlighter: rouge
 
 kramdown:
-  input                 : GFM
-  hard_wrap             : false
-  auto_ids              : true
-  footnote_nr           : 1
-  entity_output         : as_char
-  toc_levels            : 1..6
-  smart_quotes          : lsquo,rsquo,ldquo,rdquo
-  enable_coderay        : false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
-sass:
-  sass_dir              : _sass
-  style                 : compressed
+# ------------------------------------------------------------
+# 컬렉션
+# ------------------------------------------------------------
+collections:
+  tabs:
+    output: true
+    sort_by: order
 
-permalink               : /:year/:month/:day/:title/
-paginate                : 10
-paginate_path           : /page:num/
-timezone                : Asia/Seoul
+# ------------------------------------------------------------
+# 기본 front-matter
+# ------------------------------------------------------------
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      # 포스트 내 모든 이미지 경로 앞에 붙일 prefix (Chirpy 기능)
+      media_subpath: /
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs # 탭(사이드바 메뉴) 페이지
+    values:
+      layout: page
+      permalink: /:title/
 
-include:
-  - _pages
-
-exclude:
-  - node_modules
-  - vendor
-  - .sass-cache
-  - .jekyll-cache
-  - Gemfile
-  - Gemfile.lock
-  - package.json
-  - package-lock.json
-  - Rakefile
-  - README.md
-  - LICENSE
-  - log
-  - tmp
-
-keep_files:
-  - .git
-  - .svn
-
-encoding                : "utf-8"
-markdown_ext            : "markdown,mkdown,mkdn,mkd,md"
-
-# Plugins
+# ------------------------------------------------------------
+# Plugins (gem 들은 이미 Gemfile 에 포함)
+# ------------------------------------------------------------
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-remote-theme
+  - jekyll-redirect-from
+  - jekyll-seo-tag
   - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-include-cache
 
-# 아카이브 (카테고리/태그 페이지)
-category_archive:
-  type                  : liquid
-  path                  : /categories/
-tag_archive:
-  type                  : liquid
-  path                  : /tags/
-
-# jekyll-archives (GitHub Pages에서는 미지원이지만 로컬 빌드 시 사용 가능)
+# ------------------------------------------------------------
+# 아카이브 (jekyll-archives)
+# ------------------------------------------------------------
 jekyll-archives:
-  enabled:
-    - categories
-    - tags
+  enabled: [categories, tags]
   layouts:
-    category            : archive-taxonomy
-    tag                 : archive-taxonomy
+    category: category
+    tag: tag
   permalinks:
-    category            : /categories/:name/
-    tag                 : /tags/:name/
+    tag: /tags/:name/
+    category: /categories/:name/
 
-# 기본 front-matter
-defaults:
-  # _posts
-  - scope:
-      path              : ""
-      type              : posts
-    values:
-      layout            : single
-      author_profile    : true
-      read_time         : true
-      comments          : true
-      share             : true
-      related           : true
-      toc               : true
-      toc_sticky        : true
-      show_date         : true
-  # _pages
-  - scope:
-      path              : "_pages"
-      type              : pages
-    values:
-      layout            : single
-      author_profile    : true
+# ------------------------------------------------------------
+# 빌드
+# ------------------------------------------------------------
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - "*.config.js"
+  - package*.json
+
+sass:
+  style: compressed
