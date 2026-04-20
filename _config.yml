@@ -10,7 +10,7 @@ lang: ko-KR
 timezone: Asia/Seoul
 
 title: Bank-End Chronicles
-tagline: "개발 공부 기록 | Java developer"
+tagline: "「Memory gets GC'd, but this blog stays committed.」"
 description: >-
   우리는 읽은 것으로 만들어지고, 기록되지 않은 것은 기억되지 않는다.
   그래서 나는 읽고, 배우고, 그리고 남긴다.
