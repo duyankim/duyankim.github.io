@@ -1,19 +1,11 @@
 ---
 title: Gof Design Pattern - 템플릿 콜백
-excerpt: 토비의 스프링을 읽고
+description: 토비의 스프링을 읽고
 date: "2023-03-06 23:15:08 +0000"
-categories:
-  - Architecture
-  - Design Pattern
-tags:
-  - 디자인패턴
-  - Gof
-  - 템플릿 콜백
-author: Duyan Kim
-toc: true
-toc_sticky: true
-header:
-  teaser: /img/header/none4.jpg
+categories: [Architecture, Design Pattern]
+tags: [디자인패턴, Gof, 템플릿 콜백]
+image:
+  path: /img/header/none4.jpg
 ---
 # 탬플릿/콜백
 

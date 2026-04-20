@@ -1,19 +1,11 @@
 ---
 title: 어댑터 패턴
-excerpt: 호환성 높이기
+description: 호환성 높이기
 date: "2024-01-25 23:15:08 +0000"
-categories:
-  - Architecture
-  - Design Pattern
-tags:
-  - 디자인패턴
-  - Gof
-  - 어댑터 패턴
-author: Duyan Kim
-toc: true
-toc_sticky: true
-header:
-  teaser: /img/header/none4.jpg
+categories: [Architecture, Design Pattern]
+tags: [디자인패턴, Gof, 어댑터 패턴]
+image:
+  path: /img/header/none4.jpg
 ---
 # adapter pattern
 

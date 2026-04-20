@@ -1,19 +1,11 @@
 ---
 title: Gof Design Pattern - 팩토리 패턴 (팩토리 메소드, 추상 팩토리)
-excerpt: HeadFirst Design Pattern을 읽고
+description: HeadFirst Design Pattern을 읽고
 date: "2022-06-14 23:15:08 +0000"
-categories:
-  - Architecture
-  - Design Pattern
-tags:
-  - 디자인패턴
-  - Gof
-  - 팩토리패턴
-author: Duyan Kim
-toc: true
-toc_sticky: true
-header:
-  teaser: /img/header/none4.jpg
+categories: [Architecture, Design Pattern]
+tags: [디자인패턴, Gof, 팩토리패턴]
+image:
+  path: /img/header/none4.jpg
 ---
 # ✏️ 팩토리 패턴 Factory Pattern
 

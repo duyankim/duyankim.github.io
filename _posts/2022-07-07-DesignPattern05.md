@@ -1,20 +1,11 @@
 ---
 title: Gof Design Pattern - 반복자 패턴, 컴포지트 패턴
-excerpt: HeadFirst Design Pattern을 읽고
+description: HeadFirst Design Pattern을 읽고
 date: "2022-07-07 23:15:08 +0000"
-categories:
-  - Architecture
-  - Design Pattern
-tags:
-  - 디자인패턴
-  - Gof
-  - 반복자 패턴
-  - 컴포지트 패턴
-author: Duyan Kim
-toc: true
-toc_sticky: true
-header:
-  teaser: /img/header/none4.jpg
+categories: [Architecture, Design Pattern]
+tags: [디자인패턴, Gof, 반복자 패턴, 컴포지트 패턴]
+image:
+  path: /img/header/none4.jpg
 ---
 # ✏️ 반복자 패턴 Iterator Pattern
 

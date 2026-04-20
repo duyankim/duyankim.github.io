@@ -1,19 +1,11 @@
 ---
 title: Gof Design Pattern - 다양한 패턴
-excerpt: HeadFirst Design Pattern을 읽고
+description: HeadFirst Design Pattern을 읽고
 date: "2022-07-30 23:15:08 +0000"
-categories:
-  - Architecture
-  - Design Pattern
-tags:
-  - 디자인패턴
-  - Gof
-  - 다양한 패턴
-author: Duyan Kim
-toc: true
-toc_sticky: true
-header:
-  teaser: /img/header/none4.jpg
+categories: [Architecture, Design Pattern]
+tags: [디자인패턴, Gof, 다양한 패턴]
+image:
+  path: /img/header/none4.jpg
 ---
 # 🌉 브리지 패턴 Bridge Pattern
 

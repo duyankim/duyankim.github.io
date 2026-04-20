@@ -1,18 +1,11 @@
 ---
 title: Gof Design Pattern - 실전 디자인 패턴
-excerpt: HeadFirst Design Pattern을 읽고
+description: HeadFirst Design Pattern을 읽고
 date: "2022-07-25 23:15:08 +0000"
-categories:
-  - Architecture
-  - Design Pattern
-tags:
-  - 디자인패턴
-  - Gof
-author: Duyan Kim
-toc: true
-toc_sticky: true
-header:
-  teaser: /img/header/none4.jpg
+categories: [Architecture, Design Pattern]
+tags: [디자인패턴, Gof]
+image:
+  path: /img/header/none4.jpg
 ---
 # ✏️ 실전 디자인 패턴 
 

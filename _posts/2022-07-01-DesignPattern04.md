@@ -1,19 +1,11 @@
 ---
 title: Gof Design Pattern - 템플릿 메소드 패턴
-excerpt: HeadFirst Design Pattern을 읽고
+description: HeadFirst Design Pattern을 읽고
 date: "2022-07-01 23:15:08 +0000"
-categories:
-  - Architecture
-  - Design Pattern
-tags:
-  - 디자인패턴
-  - Gof
-  - 템플릿 메소드 패턴
-author: Duyan Kim
-toc: true
-toc_sticky: true
-header:
-  teaser: /img/header/none4.jpg
+categories: [Architecture, Design Pattern]
+tags: [디자인패턴, Gof, 템플릿 메소드 패턴]
+image:
+  path: /img/header/none4.jpg
 ---
 # ✏️ 템플릿 메소드 패턴 Template Method Pattern
 

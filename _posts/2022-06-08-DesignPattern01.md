@@ -1,19 +1,11 @@
 ---
 title: Gof Design Pattern - 전략패턴
-excerpt: HeadFirst Design Pattern을 읽고
+description: HeadFirst Design Pattern을 읽고
 date: "2022-06-08 23:15:08 +0000"
-categories:
-  - Architecture
-  - Design Pattern
-tags:
-  - 디자인패턴
-  - Gof
-  - 전략패턴
-author: Duyan Kim
-toc: true
-toc_sticky: true
-header:
-  teaser: /img/header/none4.jpg
+categories: [Architecture, Design Pattern]
+tags: [디자인패턴, Gof, 전략패턴]
+image:
+  path: /img/header/none4.jpg
 ---
 # ✏️ 전략패턴 Strategy Pattern
 **전략패턴**: 알고리즘군을 정의하고 캡슐화해서 각각의 알고리즘군을 수정해서 쓸 수 있게 해준다. 클라이언트로부터 알고리즘을 분리해서 독립적으로 변경할 수 있게 된다.

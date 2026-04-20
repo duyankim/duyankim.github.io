@@ -1,16 +1,11 @@
 ---
 title: Heartbeat란?
-excerpt: 고가용성 시스템을 설계해보자
+description: 고가용성 시스템을 설계해보자
 date: "2025-08-18 11:40:08 +0000"
-categories:
-  - Architecture
-tags:
-  - Heartbeat
-author: Duyan Kim
-toc: true
-toc_sticky: true
-header:
-  teaser: /img/header/spring.jpg
+categories: [Architecture]
+tags: [Heartbeat]
+image:
+  path: /img/header/spring.jpg
 ---
 # [Heartbeat](https://en.wikipedia.org/wiki/Heartbeat_(computing))
 
