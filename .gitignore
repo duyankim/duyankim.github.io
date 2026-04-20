@@ -1,14 +1,20 @@
-_site
-_posts/_draft
-_posts/_archive
-_posts/2025-05-14-TIL82.md
-_archive
-node_modules
-.vscode
-*.log
-*.lock
-*.sh
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+node_modules/
+
+# Gem
+Gemfile.lock
+
+# Drafts / archives
+_posts/_draft/
+_posts/_archive/
+
+# OS / IDE
 .DS_Store
-.jekyll-cache
 */.DS_Store
 */*/.DS_Store
+.vscode/
+*.log
