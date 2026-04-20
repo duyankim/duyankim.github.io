@@ -1,20 +1,20 @@
 ---
-layout: post
-author: "Yan"
-catalog: true
-subtitle: "실무에 적용되는 builder pattern"
-header-img: "img/header/none4.jpg"
-title: "빌더 패턴"
-date: 2024-01-25 23:15:08 +0000
+title: 빌더 패턴
+excerpt: 실무에 적용되는 builder pattern
+date: "2024-01-25 23:15:08 +0000"
 categories:
-  - DesignPattern
+  - Architecture
+  - Design Pattern
 tags:
   - 디자인패턴
   - Gof
   - 빌더 패턴
-comments: true
+author: Duyan Kim
+toc: true
+toc_sticky: true
+header:
+  teaser: /img/header/none4.jpg
 ---
-
 # Builder pattern
 
 Builder는 복잡한 객체들을 단계별로 생성할 수 있도록 하는 생성 디자인패턴

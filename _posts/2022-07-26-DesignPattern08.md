@@ -1,20 +1,20 @@
 ---
-layout: post
-author: "Yan"
-catalog: true
-subtitle: "HeadFirst Design Pattern을 읽고"
-header-img: "img/header/none4.jpg"
-title: "Gof Design Pattern - 복합 패턴"
-date: 2022-07-26 23:15:08 +0000
+title: Gof Design Pattern - 복합 패턴
+excerpt: HeadFirst Design Pattern을 읽고
+date: "2022-07-26 23:15:08 +0000"
 categories:
-  - DesignPattern
+  - Architecture
+  - Design Pattern
 tags:
   - 디자인패턴
   - Gof
   - 복합패턴
-comments: true
+author: Duyan Kim
+toc: true
+toc_sticky: true
+header:
+  teaser: /img/header/none4.jpg
 ---
-
 # ✏️ 복합 패턴 
 
 **복합패턴**: 반복적으로 생길 수 있는 일반적인 문제를 해결하는 용도로 2개 이상의 패턴을 결합해서 사용하는 것  

@@ -1,20 +1,20 @@
 ---
-layout: post
-author: "Yan"
-catalog: true
-subtitle: "HeadFirst Design Pattern을 읽고"
-header-img: "img/header/none4.jpg"
-title: "Gof Design Pattern - 템플릿 메소드 패턴"
-date: 2022-07-01 23:15:08 +0000
+title: Gof Design Pattern - 템플릿 메소드 패턴
+excerpt: HeadFirst Design Pattern을 읽고
+date: "2022-07-01 23:15:08 +0000"
 categories:
-  - DesignPattern
+  - Architecture
+  - Design Pattern
 tags:
   - 디자인패턴
   - Gof
   - 템플릿 메소드 패턴
-comments: true
+author: Duyan Kim
+toc: true
+toc_sticky: true
+header:
+  teaser: /img/header/none4.jpg
 ---
-
 # ✏️ 템플릿 메소드 패턴 Template Method Pattern
 
 **템플릿 메소드 패턴** : 알고리즘의 골격을 정의한다. 알고리즘의 일부 단계를 서브클래스에서 구현할 수 있으며, 알고리즘의 구조는 그대로 유지하면서 알고리즘의 특정 단계를 서브클래스에서 재정의할 수도 있다.

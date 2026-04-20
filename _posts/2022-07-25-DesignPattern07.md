@@ -1,19 +1,19 @@
 ---
-layout: post
-author: "Yan"
-catalog: true
-subtitle: "HeadFirst Design Pattern을 읽고"
-header-img: "img/header/none4.jpg"
-title: "Gof Design Pattern - 실전 디자인 패턴"
-date: 2022-07-25 23:15:08 +0000
+title: Gof Design Pattern - 실전 디자인 패턴
+excerpt: HeadFirst Design Pattern을 읽고
+date: "2022-07-25 23:15:08 +0000"
 categories:
-  - DesignPattern
+  - Architecture
+  - Design Pattern
 tags:
   - 디자인패턴
   - Gof
-comments: true
+author: Duyan Kim
+toc: true
+toc_sticky: true
+header:
+  teaser: /img/header/none4.jpg
 ---
-
 # ✏️ 실전 디자인 패턴 
 
 - 패턴: 특정 컨텍스트 내에서 주어진 문제의 해결책

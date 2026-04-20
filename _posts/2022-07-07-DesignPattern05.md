@@ -1,21 +1,21 @@
 ---
-layout: post
-author: "Yan"
-catalog: true
-subtitle: "HeadFirst Design Pattern을 읽고"
-header-img: "img/header/none4.jpg"
-title: "Gof Design Pattern - 반복자 패턴, 컴포지트 패턴"
-date: 2022-07-07 23:15:08 +0000
+title: Gof Design Pattern - 반복자 패턴, 컴포지트 패턴
+excerpt: HeadFirst Design Pattern을 읽고
+date: "2022-07-07 23:15:08 +0000"
 categories:
-  - DesignPattern
+  - Architecture
+  - Design Pattern
 tags:
   - 디자인패턴
   - Gof
   - 반복자 패턴
   - 컴포지트 패턴
-comments: true
+author: Duyan Kim
+toc: true
+toc_sticky: true
+header:
+  teaser: /img/header/none4.jpg
 ---
-
 # ✏️ 반복자 패턴 Iterator Pattern
 
 **반복자 패턴** : 컬렉션의 구현 방법을 노출하지 않으면서 집합체 내의 모든 항목에 접근하는 방법을 제공함.

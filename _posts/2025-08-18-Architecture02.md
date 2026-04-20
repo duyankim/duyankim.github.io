@@ -1,18 +1,17 @@
 ---
-layout: post
-author: "Yan"
-catalog: true
-subtitle: "고가용성 시스템을 설계해보자"
-header-img: "img/header/spring.jpg"
-title: "Heartbeat란?"
-date: 2025-08-18 11:40:08 +0000
+title: Heartbeat란?
+excerpt: 고가용성 시스템을 설계해보자
+date: "2025-08-18 11:40:08 +0000"
 categories:
-  - Arcitecture
+  - Architecture
 tags:
   - Heartbeat
-comments: true
+author: Duyan Kim
+toc: true
+toc_sticky: true
+header:
+  teaser: /img/header/spring.jpg
 ---
-
 # [Heartbeat](https://en.wikipedia.org/wiki/Heartbeat_(computing))
 
 Heartbeat란, 분산 시스템 환경 등에서, 서버나 서비스나 어떤 컴포넌트가 정상적으로 작동하고 있는지 주기적으로 체크하는 메세지 교환 방식이다. 지금 현재 실행 중인지, 네트워크에 접속 되어 있는지 node 들에 정기적으로 신호를 보내서 검증하는 방식이다. 일정 기간 안에 하트비트 체크 메세지가 응답이 안 올 경우에 시스템이 실패중이라고 파악할 수 있다. 

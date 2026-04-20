@@ -1,18 +1,17 @@
 ---
-layout: post
-author: "Yan"
-catalog: true
-subtitle: "고가용성 시스템을 설계해보자"
-header-img: "img/header/spring.jpg"
-title: "HA Acitve-acitve, Active Passive"
-date: 2025-08-18 11:40:08 +0000
+title: HA Acitve-acitve, Active Passive
+excerpt: 고가용성 시스템을 설계해보자
+date: "2025-08-18 11:40:08 +0000"
 categories:
-  - Arcitecture
+  - Architecture
 tags:
   - HA
-comments: true
+author: Duyan Kim
+toc: true
+toc_sticky: true
+header:
+  teaser: /img/header/spring.jpg
 ---
-
 # Active-Active vs. Active-Passive HA
 **고가용성(HA)**을 구현하는 방식에는 크게 *액티브-액티브(Active-Active)*와 *액티브-패시브(Active-Passive)* 구조가 있다. 
 

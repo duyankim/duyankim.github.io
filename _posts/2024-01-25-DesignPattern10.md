@@ -1,20 +1,20 @@
 ---
-layout: post
-author: "Yan"
-catalog: true
-subtitle: "호환성 높이기"
-header-img: "img/header/none4.jpg"
-title: "어댑터 패턴"
-date: 2024-01-25 23:15:08 +0000
+title: 어댑터 패턴
+excerpt: 호환성 높이기
+date: "2024-01-25 23:15:08 +0000"
 categories:
-  - DesignPattern
+  - Architecture
+  - Design Pattern
 tags:
   - 디자인패턴
   - Gof
   - 어댑터 패턴
-comments: true
+author: Duyan Kim
+toc: true
+toc_sticky: true
+header:
+  teaser: /img/header/none4.jpg
 ---
-
 # adapter pattern
 
 호환되지 않는 인터페이스를 가진 객체들이 협업할 수 있도록 하는 구조적 디자인 패턴

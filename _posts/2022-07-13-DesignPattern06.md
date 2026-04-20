@@ -1,20 +1,20 @@
 ---
-layout: post
-author: "Yan"
-catalog: true
-subtitle: "HeadFirst Design Pattern을 읽고"
-header-img: "img/header/none4.jpg"
-title: "Gof Design Pattern - 프록시 패턴"
-date: 2022-07-13 23:15:08 +0000
+title: Gof Design Pattern - 프록시 패턴
+excerpt: HeadFirst Design Pattern을 읽고
+date: "2022-07-13 23:15:08 +0000"
 categories:
-  - DesignPattern
+  - Architecture
+  - Design Pattern
 tags:
   - 디자인패턴
   - Gof
   - 프록시 패턴
-comments: true
+author: Duyan Kim
+toc: true
+toc_sticky: true
+header:
+  teaser: /img/header/none4.jpg
 ---
-
 # ✏️ 프록시 패턴 Proxy Pattern
 
 **프록시 패턴** : 특정 객체로의 접근을 제어하는 대리인(특정 객체를 대변하는 객체) 제공  

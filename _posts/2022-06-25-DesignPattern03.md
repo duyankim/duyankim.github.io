@@ -1,20 +1,20 @@
 ---
-layout: post
-author: "Yan"
-catalog: true
-subtitle: "HeadFirst Design Pattern을 읽고"
-header-img: "img/header/none4.jpg"
-title: "Gof Design Pattern - 싱글턴 패턴"
-date: 2022-06-25 23:15:08 +0000
+title: Gof Design Pattern - 싱글턴 패턴
+excerpt: HeadFirst Design Pattern을 읽고
+date: "2022-06-25 23:15:08 +0000"
 categories:
-  - DesignPattern
+  - Architecture
+  - Design Pattern
 tags:
   - 디자인패턴
   - Gof
   - 싱글턴패턴
-comments: true
+author: Duyan Kim
+toc: true
+toc_sticky: true
+header:
+  teaser: /img/header/none4.jpg
 ---
-
 # ✏️ 싱글턴 패턴 Singleton Pattern
 
 **싱글턴 패턴** : 클래스 인스턴스를 하나만 만들고, 그 인스턴스로의 전역 접근을 제공하는 패턴.  

@@ -1,20 +1,20 @@
 ---
-layout: post
-author: "Yan"
-catalog: true
-subtitle: "HeadFirst Design Pattern을 읽고"
-header-img: "img/header/none4.jpg"
-title: "Gof Design Pattern - 팩토리 패턴 (팩토리 메소드, 추상 팩토리)"
-date: 2022-06-14 23:15:08 +0000
+title: Gof Design Pattern - 팩토리 패턴 (팩토리 메소드, 추상 팩토리)
+excerpt: HeadFirst Design Pattern을 읽고
+date: "2022-06-14 23:15:08 +0000"
 categories:
-  - DesignPattern
+  - Architecture
+  - Design Pattern
 tags:
   - 디자인패턴
   - Gof
   - 팩토리패턴
-comments: true
+author: Duyan Kim
+toc: true
+toc_sticky: true
+header:
+  teaser: /img/header/none4.jpg
 ---
-
 # ✏️ 팩토리 패턴 Factory Pattern
 
 > 'new'연산자를 사용하면 구상 클래스의 인스턴스가 만들어진다.   

@@ -1,20 +1,20 @@
 ---
-layout: post
-author: "Yan"
-catalog: true
-subtitle: "토비의 스프링을 읽고"
-header-img: "img/header/none4.jpg"
-title: "Gof Design Pattern - 템플릿 콜백"
-date: 2023-03-06 23:15:08 +0000
+title: Gof Design Pattern - 템플릿 콜백
+excerpt: 토비의 스프링을 읽고
+date: "2023-03-06 23:15:08 +0000"
 categories:
-  - DesignPattern
+  - Architecture
+  - Design Pattern
 tags:
   - 디자인패턴
   - Gof
   - 템플릿 콜백
-comments: true
+author: Duyan Kim
+toc: true
+toc_sticky: true
+header:
+  teaser: /img/header/none4.jpg
 ---
-
 # 탬플릿/콜백
 
 - 복잡하지만 바뀌지 않는 일정한 패턴을 갖는 작업흐름이 존재하고 그 중 일부분만 자주 바꿔서 사용해야 하는 경우에 적합한 구조.

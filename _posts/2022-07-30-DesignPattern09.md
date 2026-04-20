@@ -1,20 +1,20 @@
 ---
-layout: post
-author: "Yan"
-catalog: true
-subtitle: "HeadFirst Design Pattern을 읽고"
-header-img: "img/header/none4.jpg"
-title: "Gof Design Pattern - 다양한 패턴"
-date: 2022-07-30 23:15:08 +0000
+title: Gof Design Pattern - 다양한 패턴
+excerpt: HeadFirst Design Pattern을 읽고
+date: "2022-07-30 23:15:08 +0000"
 categories:
-  - DesignPattern
+  - Architecture
+  - Design Pattern
 tags:
   - 디자인패턴
   - Gof
   - 다양한 패턴
-comments: true
+author: Duyan Kim
+toc: true
+toc_sticky: true
+header:
+  teaser: /img/header/none4.jpg
 ---
-
 # 🌉 브리지 패턴 Bridge Pattern
 
 **브리지 패턴**: 구현과 추상화 부분까지 변경하고자 할 때 사용
