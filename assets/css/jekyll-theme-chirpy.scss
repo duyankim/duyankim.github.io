@@ -1,10 +1,16 @@
 ---
 ---
 
-@import "main";
+@use "main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+";
 
 /* ------------------------------------------------------------
- * 한글 기본 폰트 — Noto Sans KR, 10pt (≈ 13.33px)
+ * 한글 기본 폰트 — Noto Sans KR
+ * Chirpy 의 rem 기반 레이아웃/사이드바/간격은 건드리지 않고
+ * 폰트 패밀리와 본문 크기만 최소 침습으로 오버라이드한다.
  * ------------------------------------------------------------ */
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
@@ -15,40 +21,39 @@
     -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
     "Malgun Gothic", "Segoe UI", Roboto, "Helvetica Neue", Arial,
     sans-serif;
-  --bs-body-font-size: 10pt; /* ≈ 13.33px */
-  --bs-body-line-height: 1.75;
 }
 
-html {
-  /* Chirpy 의 기본 16px 보다 약간 작게 재정의 */
-  font-size: 10pt;
-}
-
-body,
-#panel-wrapper,
-#sidebar,
-#main-wrapper,
-.content,
-article {
+body {
   font-family: var(--bs-body-font-family);
-  font-size: 10pt;
 }
 
-/* 제목 태그도 같은 한글 폰트 패밀리로 (굵기만 다름) */
+/* 제목 / 사이드바 타이틀도 같은 한글 폰트 패밀리 */
 h1, h2, h3, h4, h5, h6,
 #sidebar .site-title a,
 #sidebar .site-subtitle {
   font-family: var(--bs-body-font-family);
 }
 
-/* 가독성 보정 — 한글 숫자/괄호 자간 */
+/* 한글 가독성 보정 */
 article p,
 article li {
   letter-spacing: -0.01em;
   word-break: keep-all;
 }
 
-/* 코드 블록은 기본 모노스페이스 유지 (Chirpy 기본값 존중) */
+/* 본문 텍스트만 10pt 로 — 레이아웃/헤더/사이드바에는 영향 없음 */
+.content p,
+.content li,
+.content td,
+.content th,
+.content blockquote,
+.content dl,
+.content dd {
+  font-size: 10pt;
+  line-height: 1.75;
+}
+
+/* 코드 블록은 모노스페이스 유지 */
 code, kbd, pre, samp {
   font-family: "JetBrains Mono", "Fira Code", "SFMono-Regular", Menlo, Consolas, monospace;
 }
